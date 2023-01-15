@@ -8,18 +8,18 @@ let count = document.querySelector(".count")
 let counter = document.querySelector(".counter")
 let container = document.querySelector(".container")
 
-container.style.width = "340px"
+container.style.width = "400px"
 container.style.height = "300px"
 container.style.margin = " 60px auto"
 container.style.textAlign = "center"
 container.style.border = "1px solid black"
 
-input1.style.width="200px";
+input1.style.width="250px";
 input1.style.height = "30px"
 input1.style.paddingLeft = "10px"
 btn1.style.padding = "8px";
 
-input2.style.width="200px";
+input2.style.width="250px";
 input2.style.height = "30px"
 input2.style.paddingLeft = "10px"
 btn2.style.padding = "8px";
