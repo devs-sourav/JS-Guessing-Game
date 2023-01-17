@@ -18,6 +18,7 @@ input1.style.width="300px";
 input1.style.height = "30px"
 input1.style.paddingLeft = "10px"
 btn1.style.padding = "8px";
+input1.type = "password"
 
 input2.style.width="300px";
 input2.style.height = "30px"
@@ -29,8 +30,8 @@ btn2.style.display = "none"
 count.style.display = "none"
 
 btn1.addEventListener("click",function(){
-    if(!(input1.value-999999999)){
-        err1.innerHTML= "Enter a Valid Number";
+    if(!(input1.value-99999999)){
+        err1.innerHTML= "Enter a Valid Number between 0 to 9";
         err1.style.color="red"
     }else if((input1.value-99999999) && (input1.value>=0) && (input1.value <=9)){
         err1.innerHTML = ""
