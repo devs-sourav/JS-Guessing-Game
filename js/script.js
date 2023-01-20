@@ -36,7 +36,7 @@ btn1.addEventListener("click",function(){
     }else if((99999999-input1.value) && (input1.value>=1) && (input1.value <=9)){
         err1.innerHTML = ""
         input1.style.display = "none"
-        title2.innerHTML = "Please Enter a Guessing Value between 0 to 9"
+        title2.innerHTML = "Please Enter a Guessing Value between 1 to 9"
         btn1.style.display = "none"
         input2.style.display = "inline-block"
         btn2.style.display = "inline-block"
