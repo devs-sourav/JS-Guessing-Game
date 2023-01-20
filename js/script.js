@@ -30,10 +30,10 @@ btn2.style.display = "none"
 count.style.display = "none"
 
 btn1.addEventListener("click",function(){
-    if(!(input1.value-99999999)){
-        err1.innerHTML= "Enter a Valid Number between 0 to 9";
+    if(!(99999999-input1.value)){
+        err1.innerHTML= "Enter a Valid Number between 1 to 9";
         err1.style.color="red"
-    }else if((input1.value-99999999) && (input1.value>=0) && (input1.value <=9)){
+    }else if((99999999-input1.value) && (input1.value>=1) && (input1.value <=9)){
         err1.innerHTML = ""
         input1.style.display = "none"
         title2.innerHTML = "Please Enter a Guessing Value between 0 to 9"
@@ -52,7 +52,7 @@ btn1.addEventListener("click",function(){
                 title2.style.fontSize = "24px"
                 err1.style.display="none"
             }
-            else if((input2.value != input1.value) && (chance >= 0) && (chance<=5) && (input2.value>=0) && (input2.value <=9)){
+            else if((input2.value != input1.value) && (chance >= 0) && (chance<=5) && (input2.value>=1) && (input2.value <=9)){
                 
                 counter.innerHTML= chance
                 count.style.display = "block"
@@ -70,13 +70,13 @@ btn1.addEventListener("click",function(){
                 chance--
                 
             }else{
-                err1.innerHTML= "Please enter value between 0 to 9!";
+                err1.innerHTML= "Please enter value between 1 to 9!";
                 err1.style.color="red"
             }
             
         })
     }else{
-        err1.innerHTML = "Sorry! Enter a valid number between 0 to 9";
+        err1.innerHTML = "Sorry! Enter a valid number between 1 to 9";
         err1.style.color="red"
     }
     
